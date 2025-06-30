@@ -47,7 +47,7 @@ Las pruebas se realizaron en un procesador Intel Core i7-14700, aprovechando cas
 
 ![i7-14700](https://github.com/AriusJoel1/Checkers_Final/blob/main/img/im1.jpg)
 
-#### Para 25 jugadas con profundidad 6 tenemos:
+#### Para una entrada de 25 jugadas con profundidad 6 tenemos:
 
 ![](https://github.com/AriusJoel1/Checkers_Final/blob/main/img/im3.jpg)
 
