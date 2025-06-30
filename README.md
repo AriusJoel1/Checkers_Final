@@ -45,53 +45,20 @@ Este programa fue probado con una profundidad de 6, lo que significa que la IA c
 
 Las pruebas se realizaron en un procesador Intel Core i7-14700, aprovechando casi todos sus núcleos e hilos gracias a la ejecución paralela con ProcessPoolExecutor. Esto permitió observar mejoras notables en rendimiento frente a la versión secuencial, especialmente en turnos con muchas posibilidades de movimiento.
 
+![i7-14700](https://github.com/AriusJoel1/Checkers_Final/blob/main/img/im1.jpg)
+
+Para 25 jugadas con profundidad 6 tenemos:
+
+![](https://github.com/AriusJoel1/Checkers_Final/blob/main/img/im3.jpg)
+
+Resultado de tiempo:
+
+![](https://github.com/AriusJoel1/Checkers_Final/blob/main/img/im2.jpg)
+
+Características:
+  - Movimientos con captura 
+  - Movimientos sin captura
+  - Fichas en riesgo de ser capturadas
+  - Mejor movimiento (Sugerencia IA)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Iniciamos el juego
-
-![](https://github.com/AriusJoel1/JuegoDeDamas/blob/main/img/1.png)
-
-
-Si realizamos un movimiento no permitido nos saldra un mensaje de Movimiento inválido.
-
-![](https://github.com/AriusJoel1/JuegoDeDamas/blob/main/img/2.png)
-
-
-Si realizamos un movimiento posible de la lista, seguira el turno del contrincante. 
-
-![](https://github.com/AriusJoel1/JuegoDeDamas/blob/main/img/3.png)
-
-## Tarea 2:
-### ¿qué requisitos de las aplicaciones y del sistema deben tenerse en cuenta? 
-
-Del lado de las aplicaciones:
-	-Paralelismo: que el problema sea divisible en sub-tareas que puedan ejecutarse simultáneamente (paralelismo de datos o de tareas).
-  -Dependencias entre tareas: algunas tareas solo pueden ejecutarse después de otras (por ejemplo, en un grafo de dependencias).
-	-Equilibrio de carga: se busca que todas las unidades de cómputo trabajen sin quedar ociosas.
-	-Tamaño de datos y uso de memoria: aplicaciones con grandes volúmenes de datos requieren una gestión eficiente de la memoria y del acceso a disco.
-	-Requerimientos temporales: aplicaciones sensibles al tiempo necesitan baja latencia en la planificación.
-	-Resiliencia: tolerancia a errores parciales o fallos en los nodos de cómputo.
-Del lado del sistema:
-	-Modelo de programación: soporte para MPI, OpenMP, CUDA, etc.
-	-Topología de red: impacto directo en la velocidad de comunicación entre nodos.
-	-Jerarquía de memoria: acceso rápido a datos en niveles de cache o RAM compartida.
-	-Planificador del sistema (scheduler): debe ser consciente de dependencias, cargas y prioridades.
-	-Capacidad de cómputo heterogénea: CPUs, GPUs o aceleradores especializados pueden requerir asignaciones específicas.
