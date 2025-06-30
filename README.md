@@ -5,7 +5,7 @@ Este proyecto implementa un juego de damas por consola con dos inteligencias art
 ## Características
 
 - Implementación completa de las reglas tradicionales de damas, incluyendo coronación, movimientos legales y capturas.
-- Uso del algoritmo **Minimax** con evaluación de tablero y soporte para memoización (`@lru_cache`) para optimización.
+- Uso del algoritmo **Minimax** con evaluación de tablero y soporte para memoización `@lru_cache` para optimización.
 - Evaluación de jugadas usando:
   - **Paralelismo con hilos (ThreadPoolExecutor)** para calcular los movimientos posibles de cada ficha simultáneamente.
   - **Paralelismo real con múltiples procesos (ProcessPoolExecutor)** para evaluar cada rama del Minimax en núcleos distintos, mejorando el rendimiento computacional.
