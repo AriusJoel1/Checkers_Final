@@ -60,5 +60,10 @@ Las pruebas se realizaron en un procesador Intel Core i7-14700, aprovechando cas
   - Movimientos sin captura
   - Fichas en riesgo de ser capturadas
   - Mejor movimiento (Sugerencia IA)
+    
+### Conclusión
+
+Al utilizar una **profundidad baja**, ya se aprecia una diferencia significativa en tiempo de ejecución entre la versión secuencial y la paralela.  
+Sin embargo, a medida que se incrementa la profundidad (como en este caso con 6 niveles de análisis), la diferencia se vuelve aún más notable, mostrando los beneficios claros de aplicar **programación paralela** en algoritmos computacionalmente intensivos.
 
 
